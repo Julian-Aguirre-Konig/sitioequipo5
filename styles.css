@@ -85,3 +85,27 @@ footer {
     position: absolute;
     bottom: 0;
 }
+
+.professional-card {
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.professional-card h1 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.professional-card img {
+    width: 100px;
+    height: auto;
+    margin-top: 20px;
+}
