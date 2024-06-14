@@ -67,8 +67,8 @@ header ul li {
 
 .card h3 {
     margin: 0;
-    padding: 10px;
-    /* background-color: #c73434; */
+    padding: 1rem;
+    border-top: solid #ccc 1px;
     text-align: center;
 }
 
