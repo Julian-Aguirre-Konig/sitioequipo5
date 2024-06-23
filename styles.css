@@ -12,7 +12,9 @@ header {
     width: 100%;
     background: #333;
     color: white;
-    padding: 10px 0;
+    /* padding: 10px 0; */
+    display: flex;
+    gap: 150px;
 }
 
 header div {
@@ -20,6 +22,11 @@ header div {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+}
+
+.list-conteiner {
+    margin: 2rem;
+    padding: 1rem;
 }
 
 header ul {
@@ -37,6 +44,7 @@ header ul a {
 
 header ul li {
     display: inline;
+    font-size: 1.6rem;
 }
 
 .team-section {
@@ -47,7 +55,7 @@ header ul li {
 .team-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
@@ -86,6 +94,14 @@ footer {
     bottom: 0;
 }
 
+.professional-card-conteiner {
+    width: 100%;
+    height: 87vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .professional-card {
     background: #f4f4f4;
     border: 1px solid #ccc;
@@ -93,13 +109,14 @@ footer {
     padding: 20px;
     width: 80%;
     max-width: 600px;
+    height: 250px;
     margin: 20px auto;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .professional-card h1 {
-    margin: 10px 0;
+    margin: 20px 0;
     font-size: 1.5em;
     color: #333;
 }
