@@ -52,6 +52,11 @@ header ul li {
     font-size: 1.6rem;
 }
 
+.logo {
+    height: 150px;
+    width: 150px;
+}
+
 .team-section {
     padding: 20px;
     text-align: center;
