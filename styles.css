@@ -284,7 +284,7 @@ a {
     }
     
     .card {
-        width: inherit%;
+        width: inherit;
     }
 
     .juego-container {
@@ -296,3 +296,4 @@ a {
     .juego-container a {
         width: 80%;
     }
+}
