@@ -12,6 +12,7 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
+    background-color: #f4f4f4;
 }
 
 /* HEADER */
@@ -164,4 +165,16 @@ a {
     width: 100px;
     height: auto;
     margin-top: 20px;
+}
+
+.juegos-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.juego-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
