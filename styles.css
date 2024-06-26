@@ -2,10 +2,9 @@ body {
     font-family: "lato", sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
     display: grid;
-    grid-template-rows: auto 1fr auto;
     min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
     background-color: #f4f4f4;
 }
 
@@ -80,7 +79,6 @@ footer {
     text-align: center;
     text-shadow: 0 0 2px black;
     padding: 10px 0;
-    position: absolute;
     bottom: 0;
 }
 
