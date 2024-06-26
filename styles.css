@@ -1,9 +1,3 @@
-/* Paleta de colores:
-    Amarillo    #FFCC00
-    Verde       #4CAF50
-    Blanco      #FFFFFF
-    Negro       #333333   
-*/
 body {
     font-family: "lato", sans-serif;
     margin: 0;
@@ -20,7 +14,6 @@ header {
     width: 100%;
     background: #ffcc00;
     color: #f8f8f8;
-    /* padding: 10px 0; */
     display: flex;
     justify-content: space-between;
 }
@@ -126,7 +119,6 @@ a {
 .card h3 {
     margin: 0;
     padding: 1rem;
-    /* border-top: solid #ccc 1px; */
     text-align: center;
 }
 
@@ -136,7 +128,6 @@ a {
 
 .professional-card-conteiner {
     width: 100%;
-    /* height: 87vh; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -177,4 +168,68 @@ a {
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
+}
+
+#avances {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#avances h2{
+    font-size: 1.8rem;
+}
+
+
+#avances p{
+    font-size: 1.2rem;
+    margin: 0 12px 12px 12px;
+}
+
+#presentacion {
+    width: 90%;
+    box-shadow: 0 0 2px;
+    border-radius: 10px;
+    margin: 12px 0 12px 0;
+    padding: 10px;
+}
+
+#publico-objetivo {
+    width: 90%;
+    box-shadow: 0 0 2px;
+    border-radius: 10px;
+    margin: 12px 0 12px 0;
+    padding: 10px;
+}
+
+#identidad-visual {
+    width: 90%;
+    box-shadow: 0 0 2px;
+    border-radius: 10px;
+    margin: 12px 0 12px 0;
+    padding: 10px;
+}
+
+#enlaces {
+    width: 90%;
+    box-shadow: 0 0 2px;
+    border-radius: 10px;
+    margin: 12px 0 12px 0;
+    padding: 10px;
+}
+
+#logo_web {
+    display: flex;
+    justify-content: center;
+}
+
+#logo_web img{
+    width: 250px;
+    height: 250px;
+}
+
+.contenedor-titulo {
+    display: flex;
+    justify-content: center;
 }
