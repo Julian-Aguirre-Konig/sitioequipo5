@@ -1,32 +1,71 @@
-/* CSS integrantes.html */
+/* Paleta de colores:
+    Amarillo    #FFCC00
+    Verde       #4CAF50
+    Blanco      #FFFFFF
+    Negro       #333333   
+*/
 body {
     font-family: "lato", sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
 }
 
+/* HEADER */
 header {
     width: 100%;
-    background: #333;
-    color: white;
+    background: #ffcc00;
+    color: #f8f8f8;
     /* padding: 10px 0; */
     display: flex;
     justify-content: space-between;
 }
 
-a {
-    text-decoration: none;
-    color: black;
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
-header div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+nav ul a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 0 2px black;
+    font-size: 1.6rem;
+    display: block;
+    margin: 0 15px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+nav ul a li {
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+nav ul a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #fff;
+    transition: width 0.3s ease;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+nav ul a:hover li {
+    transform: scale(1.1);
+}
+
+nav ul a:hover::after {
+    width: 100%;
 }
 
 .list-conteiner {
@@ -34,27 +73,27 @@ header div {
     padding: 1rem;
 }
 
-header ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-header ul a {
-    color: white;
-    text-decoration: none;
-    padding: 0 15px;
-}
-
-header ul li {
-    display: inline;
-    font-size: 1.6rem;
-}
-
 .logo {
     height: 150px;
     width: 150px;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    background: #ffcc00;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0 0 2px black;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+}
+
+/* MAIN */
+a {
+    text-decoration: none;
+    color: #333333;
 }
 
 .team-section {
@@ -86,7 +125,7 @@ header ul li {
 .card h3 {
     margin: 0;
     padding: 1rem;
-    border-top: solid #ccc 1px;
+    /* border-top: solid #ccc 1px; */
     text-align: center;
 }
 
@@ -94,19 +133,9 @@ header ul li {
     transform: translateY(-10px);
 }
 
-footer {
-    width: 100%;
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-}
-
 .professional-card-conteiner {
     width: 100%;
-    height: 87vh;
+    /* height: 87vh; */
     display: flex;
     align-items: center;
     justify-content: center;
