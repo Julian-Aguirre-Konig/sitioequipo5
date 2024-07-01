@@ -1,0 +1,168 @@
+body {
+    font-family: "lato", sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    background: #ffcc00;
+    color: #f8f8f8;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 0 2px black;
+    font-size: 1.8rem;
+    display: block;
+    margin: 0 15px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+nav ul a li {
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+nav ul a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #fff;
+    transition: width 0.3s ease;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+nav ul a:hover li {
+    transform: scale(1.1);
+}
+
+nav ul a:hover::after {
+    width: 100%;
+}
+
+.list-conteiner {
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.logo {
+    height: 150px;
+    width: 150px;
+}
+
+
+/* MAIN */
+#reglas {
+    background-color: #ffd90031;
+    /* border: 2px solid #ffffff; */
+    box-shadow: 0 0 5px black;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+}
+
+#reglas h2 {
+    margin-top: 0;
+}
+
+#juego {
+    flex: 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#imagen {
+    width: 50%; /* Cambia el tamaño según tus necesidades */
+    max-width: 200px; /* Tamaño máximo */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#palabra {
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+#mensaje {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#mensaje.correcto {
+    color: #00a100;
+}
+
+#mensaje.incorrecto {
+    color: #da0000;
+}
+
+button {
+    font-size: 18px;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#teclado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.key {
+    font-size: 18px;
+    padding: 10px;
+    margin: 2px;
+    width: 40px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 2px black;
+}
+
+.key.usada {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    background: #ffcc00;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0 0 2px black;
+    padding: 10px 0;
+    bottom: 0;
+}

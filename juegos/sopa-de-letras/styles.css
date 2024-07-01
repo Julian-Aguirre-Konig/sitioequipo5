@@ -1,0 +1,145 @@
+body {
+    font-family: "lato", sans-serif;
+    text-align: center;
+    background-color: #feffe8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    background: #ffcc00;
+    color: #f8f8f8;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 0 2px black;
+    font-size: 1.8rem;
+    display: block;
+    margin: 0 15px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+nav ul a li {
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+nav ul a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #fff;
+    transition: width 0.3s ease;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+nav ul a:hover li {
+    transform: scale(1.1);
+}
+
+nav ul a:hover::after {
+    width: 100%;
+}
+
+.list-conteiner {
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.logo {
+    height: 150px;
+    width: 150px;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    background: #ffcc00;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0 0 2px black;
+    padding: 10px 0;
+    bottom: 0;
+}
+
+/* MAIN */
+table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#info {
+    background-color: #fff09e;
+    /* border: 2px solid #ffffff; */
+    box-shadow: 0 0 5px black;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+    background-clip:padding-box ;
+}
+
+#info h2 {
+    margin-top: 0;
+}
+
+#palabras{
+    text-align:left;
+    margin-left: 20px;
+}
+
+#sopa-de-letras {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+td {
+    border: 1px solid #000;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: lightblue;
+}
+
+.found {
+    background-color: rgba(255, 0, 0, 0.911);
+    text-decoration: line-through;
+}
+
+button {
+    font-size: 18px;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+}

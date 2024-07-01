@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="../../index.html"><img src="../../images/logo_web.png" alt="Logo Sitio" class="logo"></a>
+        </div>
+        <nav class="list-conteiner">
+            <ul>
+                <a href="../../index.html"><li>Inicio</li></a>
+                <a href="../../integrantes.html"><li>Integrantes</li></a>
+                <a href="../../avances.html"><li>Avances</li></a>
+                <a href="../../juegos.html"><li>Juegos</li></a>
+            </ul>
+        </nav>
+    </header>
+    <section id="reglas">
+        <h2>Reglas del Juego</h2>
+        <p>1. Selecciona una letra haciendo clic en el teclado en pantalla.</p>
+        <p>2. Si la letra está en la palabra, se mostrará en la posición correspondiente.</p>
+        <p>3. Si la letra no está en la palabra, perderás un intento.</p>
+        <p>4. Tienes 6 intentos para adivinar la palabra completa.</p>
+        <p>5. ¡Buena suerte!</p>
+    </section>
+    <div id="juego">
+        <img id="imagen" src="juego-del-ahorcado.svg" alt="Juego del ahorcado">
+        <p id="palabra"></p>
+        <p id="mensaje"></p>
+        <p>Intentos restantes: <span id="intentos">6</span></p>
+        <div id="teclado"></div>
+        <button onclick="reiniciarJuego()">Reiniciar</button>
+    </div>
+    <footer>
+        <p>Derechos reservados - Sitio desarrollado para uso educativo - Diseño y desarrollo Web - UADE - 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
