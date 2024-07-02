@@ -210,43 +210,52 @@ a {
 #slider-section {
     height: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
 .slider-container {
-    position: relative;
+    /* position: relative; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    order: 1;
     width: 700px;
-    height: 350px;
+    height: 300px;
     overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 2px black;
 }
 
 .slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    border-radius: inherit;
 }
 
 .slide {
     min-width: 700px;
-    height: 350px;
+    height: 300px;
     display: flex;
+    border-radius: inherit;
 }
 
 .tarjeta-juego {
     display: flex;
+    align-items: center;
     width: 100%;
     height: 100%;
     text-decoration: none;
     color: black;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: inherit;
     box-sizing: border-box;
+    background: rgb(97,22,108);
+    background: linear-gradient(45deg, rgba(97,22,108,1) 0%, rgba(176,14,63,1) 30%, rgba(224,255,0,1) 70%);
 }
 
 .tarjeta-juego img {
     width: 33%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     box-sizing: border-box;
 }
@@ -270,23 +279,24 @@ a {
 }
 
 button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
-    z-index: 10;
+    border-radius: 5px;
 }
 
 button.prev {
+    order: 0;
     left: 200px;
+    margin-right: 20px;
 }
 
 button.next {
+    order: 2;
     right: 200px;
+    margin-left: 20px;
 }
 
 /* Media query para pantallas menores o iguales a 800px */
@@ -361,7 +371,7 @@ button.next {
 
     .tarjeta-juego img {
         width: 100%;
-        height: 50%;
+        height: auto;
         object-fit: cover;
     }
 
