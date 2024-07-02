@@ -1,5 +1,5 @@
 body {
-    font-family: "lato", sans-serif;
+    font-family: "Lato", sans-serif;
     margin: 0;
     padding: 0;
     display: grid;
@@ -30,7 +30,6 @@ nav ul a {
     text-decoration: none;
     text-shadow: 0 0 2px black;
     font-size: 1.8rem;
-    display: block;
     margin: 0 15px;
     position: relative;
     transition: all 0.3s ease;
@@ -79,7 +78,6 @@ footer {
     text-align: center;
     text-shadow: 0 0 2px black;
     padding: 10px 0;
-    bottom: 0;
 }
 
 /* MAIN */
@@ -105,7 +103,7 @@ a {
     border-radius: 10px;
     overflow: hidden;
     width: 300px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
 }
 
@@ -138,10 +136,9 @@ a {
     padding: 20px;
     width: 80%;
     max-width: 600px;
-    height: 250px;
     margin: 20px auto;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .professional-card h1 {
@@ -171,49 +168,26 @@ a {
 #avances {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
 
-#avances h2{
+#avances h2 {
     font-size: 1.8rem;
 }
 
-
-#avances p{
+#avances p {
     font-size: 1.2rem;
     margin: 0 12px 12px 12px;
 }
 
-#presentacion {
-    width: 90%;
-    box-shadow: 0 0 2px;
-    border-radius: 10px;
-    margin: 12px 0 12px 0;
-    padding: 10px;
-}
-
-#publico-objetivo {
-    width: 90%;
-    box-shadow: 0 0 2px;
-    border-radius: 10px;
-    margin: 12px 0 12px 0;
-    padding: 10px;
-}
-
-#identidad-visual {
-    width: 90%;
-    box-shadow: 0 0 2px;
-    border-radius: 10px;
-    margin: 12px 0 12px 0;
-    padding: 10px;
-}
-
+#presentacion,
+#publico-objetivo,
+#identidad-visual,
 #enlaces {
     width: 90%;
     box-shadow: 0 0 2px;
     border-radius: 10px;
-    margin: 12px 0 12px 0;
+    margin: 12px 0;
     padding: 10px;
 }
 
@@ -222,7 +196,7 @@ a {
     justify-content: center;
 }
 
-#logo_web img{
+#logo_web img {
     width: 250px;
     height: 250px;
 }
@@ -266,7 +240,7 @@ a {
     color: black;
     border: 2px solid #ccc;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
 }
 
@@ -308,22 +282,22 @@ button {
 }
 
 button.prev {
-    left: 200px; /* Adjust this value as needed */
+    left: 200px;
 }
 
 button.next {
-    right: 200px; /* Adjust this value as needed */
+    right: 200px;
 }
 
-/* Media query para pantallas menores o iguales a 500px */
+/* Media query para pantallas menores o iguales a 800px */
 @media screen and (max-width: 800px) {
     header {
         flex-direction: column;
     }
 
     header div {
-    display: flex;
-    justify-content: center;
+        display: flex;
+        justify-content: center;
     }
 
     nav ul {
@@ -337,17 +311,17 @@ button.next {
     }
 
     .card {
-        width: 100%; /* Cambia el ancho de las tarjetas a 100% */
+        width: 100%;
         margin-bottom: 20px;
     }
 
     .professional-card {
-        width: 90%; /* Ajusta el ancho de la tarjeta profesional */
-        height: auto; /* Cambia la altura a automático */
+        width: 90%;
+        height: auto;
     }
 
     #logo_web img {
-        width: 200px; /* Ajusta el tamaño del logo en pantalla pequeña */
+        width: 200px;
         height: 200px;
     }
 
@@ -360,10 +334,6 @@ button.next {
     .team-container a {
         width: 80%;
     }
-    
-    .card {
-        width: inherit;
-    }
 
     .juego-container {
         display: flex;
@@ -375,7 +345,6 @@ button.next {
         width: 80%;
     }
 
-    /* SLIDER JUEGOS */
     .slider-container {
         width: 400px;
         height: 500px;
@@ -413,10 +382,10 @@ button.next {
     }
 
     button.prev {
-        left: 10px; /* Adjust this value as needed */
+        left: 10px;
     }
 
     button.next {
-        right: 10px; /* Adjust this value as needed */
+        right: 10px;
     }
 }
