@@ -29,23 +29,33 @@
         </header>
         
         <main>
-            <section class="juegos-section">
-                <h1>Aprende con nuestros juegos</h1>
-                <div class="juego-container">
-                    <a href="juegos/ahorcado/index.html">
-                        <div class="card">
-                            <img src="images/juego-del-ahorcado.svg" alt="Juego del ahorcado">
-                            <h3>Juego del ahorcado</h3>
+            <section id="slider-section">
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide">
+                            <a href="juegos/ahorcado/index.html" class="tarjeta-juego">
+                                <img src="images/juego-del-ahorcado.svg" alt="Juego del ahorcado">
+                                <div class="tarjeta-info">
+                                    <h2>Juego del ahorcado</h2>
+                                    <p>Descripción breve de no más de tres renglones.</p>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                    <a href="juegos/sopa-de-letras/index.html">
-                        <div class="card">
-                            <img src="images/juego-de-mesa.svg" alt="Sopa de letras">
-                            <h3>Sopa de letras</h3>
+                        <div class="slide">
+                            <a href="juegos/sopa-de-letras/index.html" class="tarjeta-juego">
+                                <img src="images/juego-de-mesa.svg" alt="Sopa de letras">
+                                <div class="tarjeta-info">
+                                    <h2>Sopa de letras</h2>
+                                    <p>Descripción breve de no más de tres renglones.</p>
+                                </div>
+                            </a>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            </section>
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+                <script src="scripts.js"></script>
+            </section>    
         </main>
         
         <footer>
