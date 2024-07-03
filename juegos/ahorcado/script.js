@@ -1,9 +1,9 @@
 const palabras = [
-    { palabra: "educacion", detalle: "La educación vial es fundamental para prevenir accidentes." },
-    { palabra: "vial", detalle: "La seguridad vial incluye las normas y señales de tráfico." },
-    { palabra: "seguridad", detalle: "La seguridad es clave para evitar accidentes en la vía." },
-    { palabra: "peaton", detalle: "Los peatones deben cruzar siempre por las esquinas y zonas habilitadas." },
-    { palabra: "bicicleta", detalle: "El uso de casco es esencial para los ciclistas." }
+    { palabra: "educacion", detalle: "Sabias que: La educación vial es fundamental para prevenir accidentes.", detalle_mal: "Nos enseña y nos guía, aprendemos en la escuela, empieza con 'e'." },
+    { palabra: "vial", detalle: "Sabias que: La seguridad vial incluye las normas y señales de tráfico.", detalle_mal: "Relacionado con las calles y el tráfico, empieza con 'v'." },
+    { palabra: "seguridad", detalle: "Sabias que: La seguridad es clave para evitar accidentes en la vía pública.", detalle_mal: "Nos cuida y nos protege. Empieza con 's' y nos da tranquilidad." },
+    { palabra: "peaton", detalle: "Sabias que: Los peatones deben cruzar siempre por las esquinas y zonas habilitadas.", detalle_mal: "Camina por la acera, no maneja ningún coche, empieza con 'p'." },
+    { palabra: "bicicleta", detalle: "Sabias que: El uso de casco es esencial para los ciclistas.", detalle_mal: "Tiene dos ruedas, pedales y no usa gasolina." }
 ];
 
 let palabrasRestantes = palabras.length;
@@ -93,7 +93,7 @@ function mostrarPopup(acertado) {
         detalle.innerText = palabras[palabraActualIndex].detalle;
     } else {
         resultado.innerText = "¡Intento fallido!";
-        detalle.innerText = "Aquí tienes una pista: la palabra está relacionada con la educación vial.";
+        detalle.innerText = "Pista: " + palabras[palabraActualIndex].detalle_mal;
     }
 
     popup.classList.add("visible");
