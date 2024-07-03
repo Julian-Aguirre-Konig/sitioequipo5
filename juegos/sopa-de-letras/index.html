@@ -15,6 +15,11 @@
         <div>
             <a href="../../index.html"><img src="../../images/logo_web.png" alt="Logo Sitio" class="logo"></a>
         </div>
+        <div class="header-image">
+            <img src="../../images/cruce-peatonal.png" alt="Cruce peatonal" id="logo-cruce-1">
+            <img src="../../images/cruce-peatonal.png" alt="Cruce peatonal" id="logo-cruce-2">
+            <img src="../../images/cruce-peatonal.png" alt="Cruce peatonal" id="logo-cruce-3">
+        </div>
         <nav class="list-conteiner">
             <ul>
                 <a href="../../index.html"><li>Inicio</li></a>
@@ -24,18 +29,30 @@
             </ul>
         </nav>
     </header>
-    <div id="sopa-de-letras"></div>
+    <section id="info">
+        <h2>Busca en la sopa de letras palabras a las que siempre tenes que prestarle atencion al momento de estar en la via publica. </h2>
+        <h3>Aca te dejo unas pistas para que puedas encontrar las palabras más facil.</h3>
+        <p>1. Va sobre dos pies, no usa ruedas, y cruza calles por la senda ...... ¿Qué es?</p>
+        <p>2. Lugar por donde la gente pasa y los autos tambien y estan pintados de blanco y negro. ¿Qué es?</p>
+        <p>3. Siempre lo tenes que mirar para evitar accidentes. ¿Qué es?</p>
+        <p>4. Es un accesorio que llevas en la cabeza y que puede salvarte de lesiones graves en caso de una caída o accidente. ¿Qué es?</p>
+        <p>5. Te salva la vida, lo tenes que usar siempre que estes en un vehiculo. ¿Qué es?</p>
+    </section>
+    <div class="content-wrapper">
+        <div id="sopa-de-letras"></div>
+        <div id="encontradas">
+        <h2>Palabras Encontradas</h2>
+            <ul id="lista-encontradas"></ul>
+        </div>
+    </div>
     <script src="script.js"></script>
-    <h2 id="info">Busca en la sopa de Letras las siguientes palabras </h2>
-    <h4 >Estas palabras estan relacionadas con cosas habituales que tenemos que prestar atencion al momento de estar en la via publica</h5>
-        <lu id="palabras">
-            <p>Cinturon</p>
-            <p>Casco</p>
-            <p>Semaforo</p>
-            <p>Peaton</p>
-            <p>Cruce</p>
-        </lu>
-    <button onclick="reiniciarJuego()">Reiniciar Juego</button>
+
+        <div id="popup" class="popup">
+            <p>¡Felicidades! Encontraste todas las cosas a las que tienes que prestar atención para estar seguro en la via publica.</p>
+            <button onclick="ocultarPopup()">Continuar</button>
+            <button onclick="reiniciarJuego()">Reiniciar Juego</button>
+        </div>
+    
     <footer>
         <p>Derechos reservados - Sitio desarrollado para uso educativo - Diseño y desarrollo Web - UADE - 2024</p>
     </footer>

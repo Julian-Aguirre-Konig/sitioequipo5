@@ -17,6 +17,16 @@ header {
     display: flex;
     justify-content: space-between;
 }
+.header-image {
+    flex: 1; /* Hace que el div ocupe el espacio disponible */
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-image img {
+    height: 150px;
+    object-fit: cover;
+}
 
 nav ul {
     list-style-type: none;
@@ -89,6 +99,28 @@ table {
     margin-bottom: 20px;
 }
 
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #000;
+    z-index: 1000;
+}
+
+.popup.visible {
+    display: block;
+}
+
+.popup-content {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
 #info {
     background-color: #fff09e;
     /* border: 2px solid #ffffff; */
@@ -103,12 +135,13 @@ table {
 #info h2 {
     margin-top: 0;
 }
-
-#palabras{
-    text-align:left;
-    margin-left: 20px;
+.content-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-
 #sopa-de-letras {
     display: flex;
     justify-content: center;
@@ -117,6 +150,30 @@ table {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+#encontradas {
+    float: right;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#encontradas h2 {
+    text-align: center;
+}
+
+#encontradas ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#encontradas ul li {
+    background-color: #f0f0f0;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
 
 td {
     border: 1px solid #000;
