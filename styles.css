@@ -15,6 +15,19 @@ header {
     color: #f8f8f8;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.header-image {
+    flex: 1; /* Hace que el div ocupe el espacio disponible */
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-image img {
+    height: 150px;
+    object-fit: cover;
 }
 
 nav ul {
@@ -78,6 +91,7 @@ footer {
     text-align: center;
     text-shadow: 0 0 2px black;
     padding: 10px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 /* MAIN */
@@ -127,13 +141,20 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: rgb(255,204,0);
+    background: linear-gradient(45deg, rgba(255,204,0,1) 30%, rgba(232,122,143,1) 70%, rgba(255,0,245,1) 100%);
 }
 
 .professional-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: #f4f4f4;
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
+    height: 350px;
     width: 80%;
     max-width: 600px;
     margin: 20px auto;
@@ -216,7 +237,6 @@ a {
 }
 
 .slider-container {
-    /* position: relative; */
     margin-top: 20px;
     margin-bottom: 20px;
     order: 1;
@@ -249,8 +269,8 @@ a {
     color: black;
     border-radius: inherit;
     box-sizing: border-box;
-    background: rgb(97,22,108);
-    background: linear-gradient(45deg, rgba(97,22,108,1) 0%, rgba(176,14,63,1) 30%, rgba(224,255,0,1) 70%);
+    background: rgb(255,204,0);
+    background: linear-gradient(45deg, rgba(255,204,0,1) 30%, rgba(232,122,143,1) 70%, rgba(255,0,245,1) 100%);
 }
 
 .tarjeta-juego img {
@@ -297,6 +317,36 @@ button.next {
     order: 2;
     right: 200px;
     margin-left: 20px;
+}
+
+@media screen and (max-width: 1250px) {
+    #logo-cruce-3 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    #logo-cruce-2 {
+        display: none;
+    }
+
+    #logo-cruce-3 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #logo-cruce-1 {
+        display: none;
+    }
+
+    #logo-cruce-2 {
+        display: none;
+    }
+
+    #logo-cruce-3 {
+        display: none;
+    }
 }
 
 /* Media query para pantallas menores o iguales a 800px */

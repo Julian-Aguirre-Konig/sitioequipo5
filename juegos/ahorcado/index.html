@@ -8,12 +8,17 @@
     <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div>
             <a href="../../index.html"><img src="../../images/logo_web.png" alt="Logo Sitio" class="logo"></a>
+        </div>
+        <div class="header-image">
+            <img src="../../images/cruce-peatonal.png" alt="Cruce peatonal" id="logo-cruce-1">
+            <img src="../../images/cruce-peatonal.png" alt="Cruce peatonal" id="logo-cruce-2">
+            <img src="../../images/cruce-peatonal.png" alt="Cruce peatonal" id="logo-cruce-3">
         </div>
         <nav class="list-conteiner">
             <ul>
@@ -24,6 +29,7 @@
             </ul>
         </nav>
     </header>
+
     <section id="reglas">
         <h2>Reglas del Juego</h2>
         <p>1. Selecciona una letra haciendo clic en el teclado en pantalla.</p>
@@ -37,9 +43,20 @@
         <p id="palabra"></p>
         <p id="mensaje"></p>
         <p>Intentos restantes: <span id="intentos">6</span></p>
+        <p>Palabras restantes: <span id="palabrasRestantes">6</span></p>
         <div id="teclado"></div>
         <button onclick="reiniciarJuego()">Reiniciar</button>
     </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p id="resultado"></p>
+            <p id="detalle"></p>
+            <p id="tiempo"></p>
+            <button onclick="continuarJuego()">Continuar</button>
+            <button onclick="salirJuego()">Salir</button>
+        </div>
+    </div>
+
     <footer>
         <p>Derechos reservados - Sitio desarrollado para uso educativo - Diseño y desarrollo Web - UADE - 2024</p>
     </footer>

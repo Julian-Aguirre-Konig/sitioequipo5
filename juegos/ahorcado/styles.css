@@ -1,5 +1,5 @@
 body {
-    font-family: "lato", sans-serif;
+    font-family: "Lato", sans-serif;
     text-align: center;
     background-color: #f4f4f4;
     margin: 0;
@@ -16,6 +16,19 @@ header {
     color: #f8f8f8;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.header-image {
+    flex: 1; /* Hace que el div ocupe el espacio disponible */
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-image img {
+    height: 150px;
+    object-fit: cover;
 }
 
 nav ul {
@@ -31,7 +44,6 @@ nav ul a {
     text-decoration: none;
     text-shadow: 0 0 2px black;
     font-size: 1.8rem;
-    display: block;
     margin: 0 15px;
     position: relative;
     transition: all 0.3s ease;
@@ -72,11 +84,9 @@ nav ul a:hover::after {
     width: 150px;
 }
 
-
 /* MAIN */
 #reglas {
     background-color: #ffd90031;
-    /* border: 2px solid #ffffff; */
     box-shadow: 0 0 5px black;
     border-radius: 10px;
     margin: 20px;
@@ -95,8 +105,8 @@ nav ul a:hover::after {
 }
 
 #imagen {
-    width: 50%; /* Cambia el tamaño según tus necesidades */
-    max-width: 200px; /* Tamaño máximo */
+    width: 50%;
+    max-width: 200px;
     height: auto;
     margin-bottom: 20px;
 }
@@ -165,4 +175,94 @@ footer {
     text-shadow: 0 0 2px black;
     padding: 10px 0;
     bottom: 0;
+}
+
+/* POPUP */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup.visible {
+    display: flex;
+}
+
+.popup-content {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1250px) {
+    #logo-cruce-3 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    #logo-cruce-2 {
+        display: none;
+    }
+
+    #logo-cruce-3 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #logo-cruce-1 {
+        display: none;
+    }
+
+    #logo-cruce-2 {
+        display: none;
+    }
+
+    #logo-cruce-3 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        flex-direction: column;
+    }
+
+    header div {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list-conteiner {
+        margin: 0;
+        padding: 0 0 10px 0;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .professional-card {
+        width: 90%;
+        height: auto;
+    }
+
+    #logo_web img {
+        width: 200px;
+        height: 200px;
+    }
 }

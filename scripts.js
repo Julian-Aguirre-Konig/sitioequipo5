@@ -17,5 +17,4 @@ function prevSlide() {
     showSlide(currentIndex);
 }
 
-// Auto slide every 15 seconds
-setInterval(nextSlide, 15000);
+setInterval(nextSlide, 7000);
